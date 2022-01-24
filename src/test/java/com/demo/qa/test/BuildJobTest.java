@@ -16,16 +16,9 @@ public class BuildJobTest {
 	@BeforeMethod
 	public void setUp()
 	{
-System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
+         System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
   		driver=new ChromeDriver();
-           driver.addArguments("disable-infobars");
-            driver.addArguments("--disable-browser-side-navigation");
-            driver.addArguments("--start-maximized");
-            driver.addArguments("--no-sandbox");
-            driver.addArguments("--headless");
-            driver.addArguments("--disable-dev-shm-usage");
-            driver.setExperimentalOption("useAutomationExtension", false);
-		driver.manage().window().maximize();
+        	driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //Implicit wait
 		driver.get("https://www.rnsangwan.com/");
 	}
