@@ -20,7 +20,7 @@ public class BuildJobTest {
 		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS); //Implicit wait
-		driver.get("https://demoqa.com/");
+		driver.get("https://www.rnsangwan.com/");
 	}
 	
 	@Test
