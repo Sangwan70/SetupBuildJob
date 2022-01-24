@@ -16,7 +16,7 @@ public class BuildJobTest {
 	@BeforeMethod
 	public void setUp()
 	{
-		 System.setProperty("webdriver.chrome.driver", chromeDriverLinux);
+System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
             ChromeOptions options = new ChromeOptions();
             options.addArguments("disable-infobars");
             options.addArguments("--disable-browser-side-navigation");
